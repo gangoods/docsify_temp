@@ -1,6 +1,5 @@
 - [README](README.md)
-- [guide](guide.md)
-
+- [:woman:guide](guide.md)
 - zh
   - [好人](zh/README.md)
   - [guide](zh/guide.md)

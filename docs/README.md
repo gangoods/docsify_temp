@@ -1,5 +1,6 @@
 #  docsify 
-## 安装与使用
+
+## :man: :baseball:安装与使用
 ```bash
 npm i docsify-cli -g
 # 当前目录下创建一个docs 文件夹.文档写在里面 
@@ -10,22 +11,68 @@ docsify serve docs
 docsify g docs
 ```
 ##  markdown 相关
-```
+
+### 原版的tip
 ?> 框里都变绿色了
+
 !> 红色感叹号
 
 > An awesome project.
-helloworld
+
+### 增强的tip
+
+> [!NOTE]
+> An alert of type 'note' using global style 'callout'.
+
+> [!TIP]
+> An alert of type 'tip' using global style 'callout'.
+
+
+> [!WARNING]
+> An alert of type 'warning' using global style 'callout'.
+
+> [!ATTENTION]
+> An alert of type 'attention' using global style 'callout'.
+
+> [!NOTE|style:flat]
+> An alert of type 'note' using alert specific style 'flat' which overrides global style 'callout'.
+
+- 可以指定icon
+http://www.fontawesome.com.cn/faicons/
+可以在 index.html里 设置, icon : "fa fa-comment"
+
+> [!TIP|style:flat|label:My own heading|iconVisibility:hidden]
+> An alert of type 'tip' using alert specific style 'flat' which overrides global style 'callout'.
+> In addition, this alert uses an own heading and hides specific icon.
+
+
+As you can see in the second snippet, output can be configured on alert level also. Supported options are listed in following table:
+
+| Key             | Allowed value                                           |
+| --------------- | ------------------------------------------------------- |
+| style           | One of follwowing values: callout, flat                 |
+| label           | Any text                                                |
+| icon            | A valid Font Awesome icon, e.g. 'fas fa-comment'        |
+| className       | A name of a CSS class which specifies the look and feel |
+| labelVisibility | One of follwowing values: visible (default), hidden     |
+| iconVisibility  | One of follwowing values: visible (default), hidden     |
+
+
+
+### 语法高亮
+https://cdn.jsdelivr.net/npm/prismjs@1/components/
+index.html添加
+```html
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 ```
 
-- 图片
+###  图片
 在当前目录下放置一个me.png 即可
 ```
 ![avatar](me.png)
 ```
 
-- mermaid
-```
+### mermaid
 ```mermaid
 graph TD
     A[Christmas] -->|Get money| B(Go shopping)
@@ -34,8 +81,35 @@ graph TD
     C -->|Two| E[iPhone]
     C -->|Three| F[fa:fa-car Car]
 ```
-- 插入表情
-https://jhildenbiddle.github.io/docsify-themeable/#/markdown?id=emoji
+
+## tab 的使用
+>[!note]
+> 注意 是#### 然后 标题要****包起来.加粗
+<!-- tabs:start -->
+#### **Rendered**
+hello
+#### **Markdown**
+world
+
+<!-- tabs:end -->
+
+
+## 插入emoji
+https://www.webfx.com/tools/emoji-cheat-sheet/
+
+<!-- tabs:start -->
+#### **效果**
+:bowtie:
+:smile:
+:laughing:
+:blush:
+:smiley:
+:relaxed:
+:smirk:
+:100:
+:smile:
+
+#### **markdown**
 ```
 :bowtie:
 :smile:
@@ -47,3 +121,4 @@ https://jhildenbiddle.github.io/docsify-themeable/#/markdown?id=emoji
 :100:
 :smile:
 ```
+<!-- tabs:end -->
