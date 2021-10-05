@@ -128,3 +128,19 @@ https://www.webfx.com/tools/emoji-cheat-sheet/
 :smile:
 ```
 <!-- tabs:end -->
+
+
+## copy 代码的使用
+
+如果你里面放的是用户名和密码之类的话,使用
+
+```
+    ```text
+    ```
+```
+
+```text
+yourpassword
+```
+
+这个就不会在后面加一个换行符了,导致密码错误.....
