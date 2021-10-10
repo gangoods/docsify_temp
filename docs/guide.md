@@ -1,5 +1,3 @@
 # guide
 
-mihao
 
-sdf

@@ -144,3 +144,21 @@ yourpassword
 ```
 
 这个就不会在后面加一个换行符了,导致密码错误.....
+
+
+## 图标icon的使用
+
+```
+name|block or inline| color | height and weight will be the same|horizontal or vertical
+use 
+\_\_healthicons:eye|b|#000|48|v\_\_  
+两边用2个_ 包起来
+--> delete the \
+```
+__healthicons:eye|b|#ooo|48__ abc
+
+__healthicons:joints-outline|i|#ooo|48|v__ef
+
+__healthicons:gallbladder__
+
+__healthicons:female-reproductive-system-outline__
